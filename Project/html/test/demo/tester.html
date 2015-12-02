@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ResponsiveSlides.js &middot; Responsive jQuery slideshow</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../responsiveslides.css">
+  <link rel="stylesheet" href="demo1.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="../responsiveslides.min.js"></script>
+
+<script>
+   
+    $(function () {
+    	// Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+</script>
+ </head>
+<div id="wrapper">
+<div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="images/1.jpg" alt="">
+          <p class="caption">This is a caption</p>
+        </li>
+        <li>
+          <img src="images/2.jpg" alt="">
+          <p class="caption">This is another caption</p>
+        </li>
+        <li>
+          <img src="images/3.jpg" alt="">
+          <p class="caption">The third caption</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- This is here just to demonstrate the callbacks -->
+   <!--<ul class="events">
+      <li><h3>Example 4 callback events</h3></li>
+    </ul>-->  
+
+
+</div>
+
+<body>
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Maps example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta charset="utf-8"/>
+   <link rel="stylesheet" type="text/css" href="test.css" >
+    <style>
+      html, body, #map_canvas {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+    <script>
+
+
+
+  function initialize() {
+    var mapCanvas = document.getElementById('map');
+    var mapOptions = {
+      center: new google.maps.LatLng(53.1827817,-6.1111702),
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+   
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+  var markerPos = new google.maps.LatLng(53.1830794,-6.1172375); 
+  var marker = new google.maps.Marker({
+   position: markerPos,
+   map: map,
+   title: "Sean Kelly catering"
+});
+  }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    
+</script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html> 

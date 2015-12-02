@@ -1,0 +1,31 @@
+.jumbotron
+{
+/*background-image:url('../restaurant.png');*/
+background-attachment:fixed;
+min-height:500px;
+margin-bottom:0px;
+position:relative;
+opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.alt1
+{
+background:#eee;
+min-height:400px;
+}
+
+.padding
+{
+padding-top:20px;
+padding-bottom:20px;
+}
+
+#mini{
+	width:100%;
+	height:400px;
+	
+    background-image:url('../restaurant.png');
+    background-color:;
+    position:absolute;
+    z-index: 0;

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Booking</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+  <div class="navbar-static-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-brand">
+				<a href="index.html">Kelly Catering</a>
+				</div>
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					List
+				</button>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="contact.html">Contact us</a></li>
+						<li><a href="Gallery.html">Menus</a></li>
+						<li><a href="Booking.html">Booking</a></li>
+					</ul>	
+			</div>
+		</div>
+	</div>	
+<div id="back">
+  <br/><br/>
+  
+		
+  <div class="container">
+  	<div id="word">
+	</br>
+	<div id="intro">	
+	<p>If you have any queries please use the contact page as this page is just for making bookings</p> 
+	<p>In order to book an event please choose your preferred date, enter your email, your name and a short message with a description of the event you desire.</p> 
+	</div>
+	</br>
+	</div>
+	<br/><br/>  
+
+	<div class="jumbotron">  
+  <div class="container">
+	
+		</div>	
+	</br>
+	You can fill out the form below and our team will contact you via email to help with any queries you may have.	
+	<form role="form">
+	<div class="form-group">
+		<label for="email">Email:</label>
+		<input type="email" class="form-control" id="email" name="email" placeholder="example@johnappleseed@apple.com"/>
+	</div>
+	<div class="form-group">
+		<label for="name">Name:</label>
+		<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
+	</div>
+	<div class="form-group">
+		<label for="message">Message:</label>
+		<textarea class="form-control" name="message" id="message" placeholder="Your message here"></textarea>
+	</div>
+	<div class="form-group">
+    <label for="dp">Date Picker</label>
+    <input type="date" class="form-control" id="datapicker" />
+  	</div>
+	<div class="form-group">
+	<input type="checkbox"/> Select if you wish to recieve promotional emails of our offers
+	</div>
+	<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+</div>
+	</div>
+  <br/><br/>
+</div>
+	<div class="alt2">
+		<div class="container">
+			<footer>&copy; Kelly Catering<br /><a href="#"></footer>
+		</div>
+	</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+     $( "#dp" ).datepicker({
+		//changeMonth: true,
+		//changeYear: true
+	});
+    
+    </script>
+  </body>
+</html>

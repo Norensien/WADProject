@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Home
+		</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.cycle.all.js"></script>
+						
+						<script type="text/javascript">
+							$('#slider').cycle({
+								fx: 'fade',
+								speed: 3000,
+								timeout: 4000,
+								next: '#next',
+								prevkey: "#prev", 
+
+
+												});
+						</script>
+
+
+
+
+	</head>
+
+	<body>
+
+	<div id="header"> 
+		<div id="h1">   </div>
+		<div id="h2">	</div>
+		<div id="h3">
+
+			<a href="index.html"> Home </a>
+			<a href="../html/ContactUs.html"> Contact Us </a>
+			<a href="info.html"> Information </a>
+			<a href="menus.html"> Menus </a>
+		</div>
+
+	</div>
+	<div id="spacer"></div>
+	<div id="bottom"><div id="wrapper">
+		<div id="container">
+			
+			<div class="controller" id"prev"></div>
+			
+			<div id="slider"> 
+				<img src="../images/catering.jpg" width="500" heigth="335" alt"catering1">
+				<img src="../images/cting.jpg" width="500" heigth="335" alt"catering2">
+				<img src="../images/ctring.jpg" width="500" heigth="335" alt"catering2">
+			</div>
+			
+			<div class="controller" id="next"></div>
+		</div>
+	</div>
+	</div>
+	
+	
+
+
+
+	</body>
+</html>

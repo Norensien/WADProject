@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <html>
+	<head>
+		<title>
+
+		</title>
+		<link rel="stylesheet" type="text/css" href="test.css"	>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+
+
+
+  function initialize() {
+    var mapCanvas = document.getElementById('map');
+    var mapOptions = {
+      center: new google.maps.LatLng(53.1829077,-6.1172255),
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+   
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+	var markerPos = new google.maps.LatLng(53.1829077,-6.1172255); 
+	var marker = new google.maps.Marker({
+   position: markerPos,
+   map: map,
+   title: "Sean Kelly catering"
+});
+  }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    
+</script>
+	</head>
+
+	<body>
+<div id="map">
+
+</div>
+
+
+
+
+	</body>
+</html>
